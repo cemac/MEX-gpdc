@@ -306,7 +306,7 @@ patchelf --remove-rpath ${HOME}/matlab/gpdc/lib/libQGpCoreWave.so.1
 patchelf \
   --set-rpath \
   ${MATLAB_HOME}/sys/os/glnxa64:${MATLAB_HOME}/bin/glnxa64:${HOME}/matlab/gpdc/lib \
-  gpdc.mexa64
+  ${HOME}/matlab/gpdc/gpdc.mexa64
 ```
 
 The directory `${HOME}/matlab/gpdc` can then be added to the Matlab path using
